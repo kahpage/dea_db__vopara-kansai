@@ -603,7 +603,7 @@ if __name__ == "__main__":
             #     (ReliabilityTypes.Reliable, OriginTypes.Official),
             # ),
         ],
-        # comments=None,
+        comments="Found no participating circles list for VOCALOID PARADISE 関西 6, probably lost to time.",
         description="Same organizer as MUSIC COMMUNICATION.",
         last_edited="2026.06.13",
     )
