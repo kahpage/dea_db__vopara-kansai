@@ -74,7 +74,7 @@ if __name__ == "__main__":
         event_name = f"kansai{i}"
         print(f"Processing {event_name} ...")
         vopara_index_url = None
-        vopara_circle_list_url = ""
+        vopara_circle_list_url = "https://web.archive.org/web/20150322231959/http://vo-para.birdzberth.com:80/circle_list.html"
 
         media_ = [
             Medium(
@@ -125,10 +125,10 @@ if __name__ == "__main__":
                     "Date: medium kansai01_Circle_annnai.pdf",
                     (RT.Reliable, OT.Official),
                 ),
-                # Source(
-                #     f"Participating circles: {vopara_circle_list_url}",
-                #     (RT.Reliable, OT.Official),
-                # ),
+                Source(
+                    f"Participating circles (likely, see update date): {vopara_circle_list_url}",
+                    (RT.Likely, OT.Official),
+                ),
             ],
             locations=locations,
             comments="Simultaneous with MUSIC COMMUNICATION 5, もう何も恐くない4, 関西RAG-FES28, いほん！！8",
@@ -136,7 +136,7 @@ if __name__ == "__main__":
         )
 
         # Retrieve circles
-        # event.circles = retrieve_circles(event_name)
+        event.circles = retrieve_circles(event_name)
         events.append(event)
 
     i = 2  # ==== vopara-kansai2 ====
@@ -243,13 +243,22 @@ if __name__ == "__main__":
     if i in active_events:
         event_name = f"kansai{i}"
         print(f"Processing {event_name} ...")
-        vopara_index_url = "https://web.archive.org/web/20140325191319/http://vo-para.birdzberth.com/"
-        vopara_circle_list_url = "http://ttc.ninja-web.net/vo-para/vo-para-kansai03_list.htm"
+        vopara_index_url = (
+            "https://web.archive.org/web/20140325191319/http://vo-para.birdzberth.com/"
+        )
+        vopara_circle_list_url = (
+            "http://ttc.ninja-web.net/vo-para/vo-para-kansai03_list.htm"
+        )
 
         media_ = [
             Medium(
                 "kansai03_o0800045012864218860.jpg",
-                [Source("https://ameblo.jp/chrolea/entry-11786343639.html", (RT.Likely, OT.External))],
+                [
+                    Source(
+                        "https://ameblo.jp/chrolea/entry-11786343639.html",
+                        (RT.Likely, OT.External),
+                    )
+                ],
             ),
             Medium(
                 "kansai03_20140704025155_mainimg_vpk.jpg",
@@ -307,125 +316,133 @@ if __name__ == "__main__":
         event.circles = retrieve_circles(event_name)
         events.append(event)
 
-    # i =   # ==== vopara-kansai ====
-    # if i in active_events:
-    #     event_name = f"kansai{i}"
-    #     print(f"Processing {event_name} ...")
-    #     vopara_index_url = ""
-    #     vopara_circle_list_url = ""
+    i = 4  # ==== vopara-kansai4 ====
+    if i in active_events:
+        event_name = f"kansai{i}"
+        print(f"Processing {event_name} ...")
+        vopara_index_url = "https://web.archive.org/web/20150204123125/http://vo-para.birdzberth.com/"
+        vopara_circle_list_url = "http://ttc.ninja-web.net/vo-para/vpk4-mp_list.htm"
 
-    #     media_ = [
-    #         # Medium(
-    #         #     "",
-    #         #     [Source(vopara_index_url, (RT.Reliable, OT.Official))],
-    #         # ),
-    #         # Medium(
-    #         #     "",
-    #         #     [Source(vopara_index_url, (RT.Reliable, OT.Official))],
-    #         # ),
-    #         # Medium(
-    #         #     "",
-    #         #     [Source(vopara_index_url, (RT.Reliable, OT.Official))],
-    #         # ),
-    #     ]
-    #     locations = [
-    #         # Location(
-    #         #     iframe_url="",
-    #         #     description="",
-    #         #     sources=[
-    #         #         Source(
-    #         #             vopara_index_url,
-    #         #             (ReliabilityTypes.Reliable, OriginTypes.Official),
-    #         #         )
-    #         #     ],
-    #         # ),
-    #     ]
-    #     event = Event(
-    #         aliases=[
-    #             f"VOCALOID PARADISE 関西 {i}",
-    #             f"ボーパラ関西{i}",
-    #             f"VOCALOID PARADISE Kansai {i}",
-    #         ],
-    #         dates="",
-    #         media=media_,
-    #         sources=[
-    #             Source(
-    #                 f"Date: {vopara_index_url}",
-    #                 (RT.Reliable, OT.Official),
-    #             ),
-    #             # Source(
-    #             #     f"Participating circles: {vopara_circle_list_url}",
-    #             #     (RT.Reliable, OT.Official),
-    #             # ),
-    #         ],
-    #         locations=locations,
-    #         # comments="",
-    #         last_edited="2026.06.13",
-    #     )
+        media_ = [
+            Medium(
+                "kansai04_20150330164633_vpk4_catalog.jpg",
+                [Source("https://web.archive.org/web/20150330164633/http://vo-para.birdzberth.com/image/vpk4_catalog.jpg", (RT.Reliable, OT.Official))],
+            ),
+            Medium(
+                "kansai04_20150703140840_vpk4.png",
+                [Source(vopara_index_url, (RT.Reliable, OT.Official))],
+            ),
+            Medium(
+                "kansai04_150308_layout.pdf",
+                [Source(vopara_circle_list_url, (RT.Reliable, OT.Official))],
+            ),
+            Medium(
+                "kansai04_150308_circlelist.pdf",
+                [Source(vopara_circle_list_url, (RT.Reliable, OT.Official))],
+            ),
+            # Medium(
+            #     "",
+            #     [Source(vopara_index_url, (RT.Reliable, OT.Official))],
+            # ),
+        ]
+        locations = [
+            Location(
+                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.751071069338!2d135.7783858758542!3d35.01293597281049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108e5fdb0fb75%3A0x32f576fbc1dc5042!2sMiyako%20Messe%20(Kyoto%20International%20Exhibition%20Hall)!5e0!3m2!1sen!2sfr!4v1781344404658!5m2!1sen!2sfr",
+                description="みやこめっせ（京都市勧業館） ３階第３展示場 全面",
+                sources=[
+                    Source(
+                        "https://web.archive.org/web/20150323052057/http://vo-para.birdzberth.com/forcircle.html",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+            ),
+        ]
+        event = Event(
+            aliases=[
+                f"VOCALOID PARADISE 関西 {i}",
+                f"ボーパラ関西{i}",
+                f"VOCALOID PARADISE Kansai {i}",
+            ],
+            dates="2015.03.08",
+            media=media_,
+            sources=[
+                Source(
+                    f"Date: {vopara_index_url}",
+                    (RT.Reliable, OT.Official),
+                ),
+                Source(
+                    f"Participating circles (pdf): {vopara_circle_list_url}",
+                    (RT.Reliable, OT.Official),
+                ),
+            ],
+            locations=locations,
+            comments="Simultaneous with MUSIC COMMUNICATION 11, モジュールPARADISE, IA holic, 結月家の食卓　～おかわり～",
+            last_edited="2026.06.13",
+        )
 
-    #     # Retrieve circles
-    #     event.circles = retrieve_circles(event_name)
-    #     events.append(event)
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
 
-    # i =   # ==== vopara-kansai ====
-    # if i in active_events:
-    #     event_name = f"kansai{i}"
-    #     print(f"Processing {event_name} ...")
-    #     vopara_index_url = ""
-    #     vopara_circle_list_url = ""
+    i = 5  # ==== vopara-kansai5 ====
+    if i in active_events:
+        event_name = f"kansai{i}"
+        print(f"Processing {event_name} ...")
+        vopara_index_url = None
+        vopara_circle_list_url = "https://web.archive.org/web/20160221081920/http://vo-para.birdzberth.com/cercle_list.html"
 
-    #     media_ = [
-    #         # Medium(
-    #         #     "",
-    #         #     [Source(vopara_index_url, (RT.Reliable, OT.Official))],
-    #         # ),
-    #         # Medium(
-    #         #     "",
-    #         #     [Source(vopara_index_url, (RT.Reliable, OT.Official))],
-    #         # ),
-    #         # Medium(
-    #         #     "",
-    #         #     [Source(vopara_index_url, (RT.Reliable, OT.Official))],
-    #         # ),
-    #     ]
-    #     locations = [
-    #         # Location(
-    #         #     iframe_url="",
-    #         #     description="",
-    #         #     sources=[
-    #         #         Source(
-    #         #             vopara_index_url,
-    #         #             (ReliabilityTypes.Reliable, OriginTypes.Official),
-    #         #         )
-    #         #     ],
-    #         # ),
-    #     ]
-    #     event = Event(
-    #         aliases=[
-    #             f"VOCALOID PARADISE 関西 {i}",
-    #             f"ボーパラ関西{i}",
-    #             f"VOCALOID PARADISE Kansai {i}",
-    #         ],
-    #         dates="",
-    #         media=media_,
-    #         sources=[
-    #             Source(
-    #                 f"Date: {vopara_index_url}",
-    #                 (RT.Reliable, OT.Official),
-    #             ),
-    #             # Source(
-    #             #     f"Participating circles: {vopara_circle_list_url}",
-    #             #     (RT.Reliable, OT.Official),
-    #             # ),
-    #         ],
-    #         locations=locations,
-    #         # comments="",
-    #         last_edited="2026.06.13",
-    #     )
+        media_ = [
+            Medium(
+                "kansai05_vpk5_layout.pdf",
+                [Source(vopara_circle_list_url, (RT.Reliable, OT.Official))],
+            ),
+            # Medium(
+            #     "",
+            #     [Source(vopara_index_url, (RT.Reliable, OT.Official))],
+            # ),
+            # Medium(
+            #     "",
+            #     [Source(vopara_index_url, (RT.Reliable, OT.Official))],
+            # ),
+        ]
+        locations = [
+            Location(
+                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.751071069338!2d135.7783858758542!3d35.01293597281049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108e5fdb0fb75%3A0x32f576fbc1dc5042!2sMiyako%20Messe%20(Kyoto%20International%20Exhibition%20Hall)!5e0!3m2!1sen!2sfr!4v1781344404658!5m2!1sen!2sfr",
+                description="京都みやこめっせ 3F",
+                sources=[
+                    Source(
+                        "https://web.archive.org/web/20160307132624/http://vo-para.birdzberth.com/about.html",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+            ),
+        ]
+        event = Event(
+            aliases=[
+                f"VOCALOID PARADISE 関西 {i}",
+                f"ボーパラ関西{i}",
+                f"VOCALOID PARADISE Kansai {i}",
+            ],
+            dates="2016.03.06",
+            media=media_,
+            sources=[
+                Source(
+                    "Date: https://web.archive.org/web/20160307132624/http://vo-para.birdzberth.com/about.html",
+                    (RT.Reliable, OT.Official),
+                ),
+                Source(
+                    f"Participating circles: {vopara_circle_list_url}, as see [here](https://web.archive.org/web/20160310170153/http://vo-para.birdzberth.com/), new website layout created before this event.",
+                    (RT.Reliable, OT.Official),
+                ),
+            ],
+            locations=locations,
+            # comments="",
+            last_edited="2026.06.13",
+        )
 
-    #     # Retrieve circles
-    #     event.circles = retrieve_circles(event_name)
-    #     events.append(event)
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
 
     # i =   # ==== vopara-kansai ====
     # if i in active_events:
@@ -558,8 +575,8 @@ if __name__ == "__main__":
                 )
             ],
         ),
-        # Medium("",
-        #        [Source("", (RT.Reliable, OT.Official))]),
+        Medium("eg_top_image2.png",
+               [Source("https://web.archive.org/web/20150911074412/http://vo-para.birdzberth.com/circle.html", (RT.Reliable, OT.Official))]),
         # Medium("",
         #        [Source("", (RT.Reliable, OT.Official))]),
         # Medium("",
