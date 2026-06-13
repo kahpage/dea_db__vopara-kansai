@@ -563,7 +563,7 @@ if __name__ == "__main__":
     # ==== event group ====
     media = [
         Medium(
-            "kansai_20120704095522_VPK_banner.jpg",
+            "eg_20120704095522_VPK_banner.jpg",
             [
                 Source(
                     "https://web.archive.org/web/20120704095522/http://ttc.ninja-web.net/vo-para/index.html",
