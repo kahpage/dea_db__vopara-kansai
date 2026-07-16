@@ -60,7 +60,7 @@ def sanitize_string(s: str) -> str:
 def main():
     """Create circles.json"""
     print(f"Retrieving circles information for {NAME} ...")
-    raw_url = "https://web.archive.org/web/20160221081920fw_/http://vo-para.birdzberth.com/cercle_list.html"
+    raw_url = "https://web.archive.org/web/20160221081920id_/http://vo-para.birdzberth.com/cercle_list.html"
     
     # Parse the HTML content to extract circle information
     soup = retrieve_soup_fetch_if_needed(raw_url)
