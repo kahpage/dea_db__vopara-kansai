@@ -102,14 +102,18 @@ if __name__ == "__main__":
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.751071069338!2d135.7783858758542!3d35.01293597281049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108e5fdb0fb75%3A0x32f576fbc1dc5042!2sMiyako%20Messe%20(Kyoto%20International%20Exhibition%20Hall)!5e0!3m2!1sen!2sfr!4v1781344404658!5m2!1sen!2sfr",
+                coordinates=(35.01365, 135.7809429),
+                address="9-1 Okazaki Seishojicho, Sakyo Ward, Kyoto, 606-8343, Japan",
                 description="京都市勧業館 みやこめっせ 3F 第3展示場 A面",
                 sources=[
                     Source(
-                        "Medium kansai01_Circle_annnai.pdf",
+                        "Medium kansai01_Circle_annnai.pdf (https://web.archive.org/web/20120801024850/http://vo-para.birdzberth.com/data/Circle_annnai.pdf)",
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlur6oWztq77DaOuTZLw5MRyj3iDVD1CD-wl9_7wkEXC7e9JYhls5YX8XY6_936CE_RWP6CozLolZI73Mh7gleO-PgU9DJro4VpNaq7nQSPaHd9rChZ-VVge7urD47mbsVOMZ6B-A=s870-k-no",
+                url="https://maps.app.goo.gl/8MjxYFEFKBxjhyTT8",
             ),
         ]
         event = Event(
@@ -202,7 +206,8 @@ if __name__ == "__main__":
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.751071069338!2d135.7783858758542!3d35.01293597281049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108e5fdb0fb75%3A0x32f576fbc1dc5042!2sMiyako%20Messe%20(Kyoto%20International%20Exhibition%20Hall)!5e0!3m2!1sen!2sfr!4v1781344404658!5m2!1sen!2sfr",
+                coordinates=(35.01365, 135.7809429),
+                address="9-1 Okazaki Seishojicho, Sakyo Ward, Kyoto, 606-8343, Japan",
                 description="京都市勧業館（みやこめっせ）",
                 sources=[
                     Source(
@@ -210,6 +215,9 @@ if __name__ == "__main__":
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlur6oWztq77DaOuTZLw5MRyj3iDVD1CD-wl9_7wkEXC7e9JYhls5YX8XY6_936CE_RWP6CozLolZI73Mh7gleO-PgU9DJro4VpNaq7nQSPaHd9rChZ-VVge7urD47mbsVOMZ6B-A=s870-k-no",
+                url="https://maps.app.goo.gl/8MjxYFEFKBxjhyTT8",
             ),
         ]
         event = Event(
@@ -279,7 +287,8 @@ if __name__ == "__main__":
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.751071069338!2d135.7783858758542!3d35.01293597281049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108e5fdb0fb75%3A0x32f576fbc1dc5042!2sMiyako%20Messe%20(Kyoto%20International%20Exhibition%20Hall)!5e0!3m2!1sen!2sfr!4v1781344404658!5m2!1sen!2sfr",
+                coordinates=(35.01365, 135.7809429),
+                address="9-1 Okazaki Seishojicho, Sakyo Ward, Kyoto, 606-8343, Japan",
                 description="京都府京都市左京区岡崎成勝寺町9番地の1京都市勧業館（みやこめっせ）３階 第３展示場全",
                 sources=[
                     Source(
@@ -287,6 +296,9 @@ if __name__ == "__main__":
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlur6oWztq77DaOuTZLw5MRyj3iDVD1CD-wl9_7wkEXC7e9JYhls5YX8XY6_936CE_RWP6CozLolZI73Mh7gleO-PgU9DJro4VpNaq7nQSPaHd9rChZ-VVge7urD47mbsVOMZ6B-A=s870-k-no",
+                url="https://maps.app.goo.gl/8MjxYFEFKBxjhyTT8",
             ),
         ]
         event = Event(
@@ -347,7 +359,8 @@ if __name__ == "__main__":
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.751071069338!2d135.7783858758542!3d35.01293597281049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108e5fdb0fb75%3A0x32f576fbc1dc5042!2sMiyako%20Messe%20(Kyoto%20International%20Exhibition%20Hall)!5e0!3m2!1sen!2sfr!4v1781344404658!5m2!1sen!2sfr",
+                coordinates=(35.01365, 135.7809429),
+                address="9-1 Okazaki Seishojicho, Sakyo Ward, Kyoto, 606-8343, Japan",
                 description="みやこめっせ（京都市勧業館） ３階第３展示場 全面",
                 sources=[
                     Source(
@@ -355,6 +368,9 @@ if __name__ == "__main__":
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlur6oWztq77DaOuTZLw5MRyj3iDVD1CD-wl9_7wkEXC7e9JYhls5YX8XY6_936CE_RWP6CozLolZI73Mh7gleO-PgU9DJro4VpNaq7nQSPaHd9rChZ-VVge7urD47mbsVOMZ6B-A=s870-k-no",
+                url="https://maps.app.goo.gl/8MjxYFEFKBxjhyTT8",
             ),
         ]
         event = Event(
@@ -407,7 +423,8 @@ if __name__ == "__main__":
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.751071069338!2d135.7783858758542!3d35.01293597281049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108e5fdb0fb75%3A0x32f576fbc1dc5042!2sMiyako%20Messe%20(Kyoto%20International%20Exhibition%20Hall)!5e0!3m2!1sen!2sfr!4v1781344404658!5m2!1sen!2sfr",
+                coordinates=(35.01365, 135.7809429),
+                address="9-1 Okazaki Seishojicho, Sakyo Ward, Kyoto, 606-8343, Japan",
                 description="京都みやこめっせ 3F",
                 sources=[
                     Source(
@@ -415,6 +432,9 @@ if __name__ == "__main__":
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlur6oWztq77DaOuTZLw5MRyj3iDVD1CD-wl9_7wkEXC7e9JYhls5YX8XY6_936CE_RWP6CozLolZI73Mh7gleO-PgU9DJro4VpNaq7nQSPaHd9rChZ-VVge7urD47mbsVOMZ6B-A=s870-k-no",
+                url="https://maps.app.goo.gl/8MjxYFEFKBxjhyTT8",
             ),
         ]
         event = Event(
@@ -459,7 +479,8 @@ if __name__ == "__main__":
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.751071069338!2d135.7783858758542!3d35.01293597281049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108e5fdb0fb75%3A0x32f576fbc1dc5042!2sMiyako%20Messe%20(Kyoto%20International%20Exhibition%20Hall)!5e0!3m2!1sen!2sfr!4v1781344404658!5m2!1sen!2sfr",
+                coordinates=(35.01365, 135.7809429),
+                address="9-1 Okazaki Seishojicho, Sakyo Ward, Kyoto, 606-8343, Japan",
                 description="京都市勧業館みやこめっせ",
                 sources=[
                     Source(
@@ -467,6 +488,9 @@ if __name__ == "__main__":
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlur6oWztq77DaOuTZLw5MRyj3iDVD1CD-wl9_7wkEXC7e9JYhls5YX8XY6_936CE_RWP6CozLolZI73Mh7gleO-PgU9DJro4VpNaq7nQSPaHd9rChZ-VVge7urD47mbsVOMZ6B-A=s870-k-no",
+                url="https://maps.app.goo.gl/8MjxYFEFKBxjhyTT8",
             ),
         ]
         event = Event(
@@ -519,7 +543,8 @@ if __name__ == "__main__":
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.3700040500134!2d135.74830447585123!3d34.94733387283321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010587a8d65d7b%3A0xc0fa6c9a0c5ce765!2sKy%C5%8Dto%20Pulse%20Plaza!5e0!3m2!1sen!2sfr!4v1781357905201!5m2!1sen!2sfr",
+                coordinates=(34.9473339, 135.7508794),
+                address="5 Takeda Tobadonocho, Fushimi Ward, Kyoto, 612-8450, Japan",
                 description="京都パルスプラザ",
                 sources=[
                     Source(
@@ -527,6 +552,9 @@ if __name__ == "__main__":
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWngwtW3CTY9qMFK-jYQVowY2JCJ97anQchzHm7zVLYykWkXyRICe7jgHhQQKCjg5VOWqXFI8MrvNRddGvWuXcKEwbjGUnKk1kM0_zo8KKdbr6xrIRZbPgJ9om65WepNsOvAkw0=s0?imgmax=0",
+                url="https://maps.app.goo.gl/vC8pvtCnt3p9FR1dA",
             ),
         ]
         event = Event(
